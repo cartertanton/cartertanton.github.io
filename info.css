@@ -477,13 +477,13 @@ h1#contact {
   
   .frame {
     position: relative;
-    min-width: 90vw;
+    min-width: 95vw;
     aspect-ratio: 4 / 5;
     max-height: calc(35vw * 5 / 4);
     /* border: 1.5px solid red; */
     display: flex;
     flex-wrap: wrap;
-    margin: 20vh auto 0 auto;
+    margin: 15vh auto 0 auto;
   }
   
   .panels {
@@ -541,9 +541,9 @@ h1#contact {
   /* TEXT CSS */
   
   div h1 {
-    letter-spacing: 1.45px;
+    letter-spacing: 1.25px;
     font-family: "Bold", sans-serif;
-    font-size: 1.25rem;
+    font-size: 1.05rem;
     -webkit-text-fill-color: red;
     text-fill-color: red;
   }
