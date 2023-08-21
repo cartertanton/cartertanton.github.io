@@ -1,0 +1,190 @@
+@font-face {
+    font-family: "Italics";
+    src: url("/fonts/ABCMarfa-SemiboldItalic-Trial.otf") format("opentype");
+  }
+  @font-face {
+    font-family: "Bold";
+    src: url("/fonts/ABCMarfa-Bold-Trial.otf") format("opentype");
+  }
+  @font-face {
+    font-family: "Medium";
+    src: url("/fonts/ABCMarfa-Light-Trial.otf") format("opentype");
+  }
+  
+  :root {
+    /* font families */
+    --font-family-1: "Medium", sans-serif;
+    --font-family-2: "Italics", sans-serif;
+  
+    /* primitives */
+    --color-blackdark: #0d0b07;
+    --color-blacklight: hsla(0, 0%, 20%, 0.05);
+    --color-blacklight2: hsla(0, 0%, 20%, 0.2);
+    --color-brightwhite: #F5F5F5;
+    --color-motion: #4b88be;
+    --color-motionvideo: hsla(358, 79%, 70%, .15);
+    --color-ui: (124, 45%, 44%, 1)hsla;
+    --color-composites: #4b88be;
+    --color-graphics: hsla(47, 87%, 60%, 1);
+  
+    /* Tokenized colors */
+    --color-fg: var(--color-blackdark);
+    --color-bg: var(--color-brightwhite);
+    --color-header: var(--color-blacklight);
+    --color-video: var(--color-blacklight2);
+  }
+  
+  html,
+  body,
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: var(--color-bg);
+    font-size: 16px;
+  }
+  
+  header {
+    letter-spacing: 3px;
+    z-index: 3;
+    letter-spacing: 3px;
+      font-family: "Bold", sans-serif;
+      font-size: 1.2rem;
+      -webkit-text-stroke: .95px var(--color-motion);
+      text-stroke: .95px var(--color-motion);
+      -webkit-text-fill-color: transparent;
+      text-fill-color: transparent;
+    position: fixed;
+    display: inline-flex;
+    padding: 0 75px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-header);
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur(7.5px);
+    min-width: 100vw;
+    min-height: 7.5vh;
+    color: var(--color-motion);
+    border-bottom: 1.5px solid var(--color-motion);
+  }
+  
+  .return-icon {
+    margin-top: 7.5px;
+    transform: scale(1.05);
+    fill: var(
+      --color-motion
+    );
+  }
+  
+
+  
+  div.scroll-container {
+    top: 14.5vh;
+    margin: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 90vw;
+    gap: 12vh;
+    height: fit-content;
+    padding-bottom: 4.5vh;
+  }
+
+  .panel {
+    position: relative;
+    min-width: 60%;
+     border: 1.5px solid var(--color-motion);
+     border-radius: 8px 8px 0 0;
+     height: object-fit;
+  }
+ 
+div.frame {
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+ 
+}
+  
+  h2 {
+    font-family: "Medium", sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: 5px;
+    text-align: center;
+    color: var(--color-motion);
+    border-bottom: 1.5px solid var(--color-motion);
+    min-width: 100%;
+    min-height: 4.5vh;
+    margin-top: 2.25vh;
+  
+  }
+  
+  /* SMALL DESKTOP BREAKPOINT */
+  @media (max-width: 1300px) {
+  
+    header {
+      font-size: 1rem;
+      letter-spacing: 2.5px;
+      -webkit-text-stroke: .85px var(--color-motion);
+      text-stroke: .85px var(--color-motion);
+    }
+  
+    .return-icon {
+      transform: scale(1);
+    }
+    .panel {
+      min-width: 75%;
+    }
+
+    h2 {
+      font-size: 1.12em;
+      letter-spacing: 5px;
+    }
+  
+   
+  }
+  
+  /* MOBILE BREKAPOINT */
+  
+  @media (min-width: 300px) and (max-width: 770px) {
+  
+    header {
+      min-height: 7vh;
+      font-size: .9rem;
+      letter-spacing: 1.5px;
+      padding: 0 5.5vw;
+      -webkit-text-stroke: .35px var(--color-motion);
+      text-stroke: .35px var(--color-motion);
+    }
+  
+    .return-icon {
+      transform: scale(.9);
+    }
+   
+    div.scroll-container {
+      top: 12vh;
+      max-width: 90vw;
+      gap: 5.5vh;
+    }
+  
+    .panel {
+      min-width: 100%;
+    }
+
+    
+    h2 {
+      font-size: .85rem;
+      letter-spacing: 3px;
+      text-align: center;
+      color: var(--color-motion);
+      border-bottom: 1.5px solid var(--color-motion);
+      padding-bottom: 1.25vh;
+      min-width: 100%;
+      min-height: 1.5vh;
+      margin-top: 1.25vh;
+    
+    }
+  

@@ -1,0 +1,586 @@
+@font-face {
+  font-family: "Italics";
+  src: url("/fonts/ABCMarfa-SemiboldItalic-Trial.otf") format("opentype");
+}
+@font-face {
+  font-family: "Bold";
+  src: url("/fonts/ABCMarfa-Bold-Trial.otf") format("opentype");
+}
+@font-face {
+  font-family: "Medium";
+  src: url("/fonts/ABCMarfa-Light-Trial.otf") format("opentype");
+}
+
+:root {
+  /* font families */
+  --font-family-1: "Medium", sans-serif;
+  --font-family-2: "Italics", sans-serif;
+
+  /* primitives */
+  --color-blackdark: hsla(40, 30%, 4%, 1);
+  --color-blacklight: hsla(0, 0%, 20%, 0.05);
+  --color-brightwhite: #f7f6f7;
+  --color-motion: #4b88be;
+  --color-ui: hsla(124, 45%, 44%, 1);
+  --color-info: #F78764;
+  --color-graphics: hsla(47, 87%, 60%, 1);
+
+  /* Tokenized colors */
+  --color-fg: var(--color-blackdark);
+  --color-bg: var(--color-brightwhite);
+  --color-header: var(--color-blacklight);
+
+  /* BORDERS */
+  --border-width: 1.5px;
+
+  /* TEXT STROKE */
+  --text-stroke: 0.8px;
+}
+
+html,
+body,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-bg);
+  font-size: 16px;
+}
+
+header {
+  z-index: 3;
+  letter-spacing: 3px;
+  font-family: "Bold", sans-serif;
+  font-size: 1.2rem;
+  -webkit-text-stroke: .95px var(--color-info);
+  text-stroke: .95px var(--color-info);
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  /* color: var(--color-graphics); */
+  position: fixed;
+  top: 0;
+  display: inline-flex;
+  padding: 0 75px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-header);
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
+  min-width: 100vw;
+  min-height: 7.5vh;
+  border-bottom: 1.5px solid var(--color-info);
+}
+
+.return-icon {
+  margin-top: 7.5px;
+  transform: scale(1.05);
+  fill: var(--color-info);
+}
+
+/* FRAME */
+
+.frame {
+  position: relative;
+  min-width: 35vw;
+  aspect-ratio: 4 / 5;
+  max-height: calc(35vw * 5 / 4);
+  /* border: 1.5px solid red; */
+  display: flex;
+  flex-wrap: wrap;
+  margin: 15vh auto 0 auto;
+}
+
+.panels {
+  position: relative;
+  min-width: 50%;
+  min-height: 50%;
+  border-style: solid;
+  border-color: var(--color-info);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* FRAME BORDERS, PADDING & TEXT */
+#clients-container {
+  border-width: var(--border-width) var(--border-width) var(--border-width) 0;
+  padding-right: 2.5%;
+  padding-bottom: 2.5%;
+  text-align: right;
+  color: var(--color-motion);
+  display: flex;
+  justify-content: flex-end;
+}
+#software-container {
+  border-width: var(--border-width) 0 var(--border-width);
+  padding: 2.5% 0 2.5% 2.5%;
+  text-align: left;
+  color: var(--color-graphics);
+  display: flex;
+  justify-content: flex-end;
+}
+#contact-container {
+  padding: 2.5% 2.5% 2.5% 0;
+  text-align: right;
+  color: var(--color-ui);
+  border-width: 0 var(--border-width) var(--border-width) 0;
+}
+#picture-container {
+  border-width: 0 0 var(--border-width) 0;
+  background-color: transparent;
+}
+
+.gifcontainer {
+  width: 150px;
+  height: 150px;
+  margin: 4.5% 0 0 4.5%;
+  border-radius: 100%;
+  border: 5px solid var(--color-graphics);
+  background-image: url("/video/Beach2.gif");
+  background-size: 110%;
+  background-position-x: 15%;
+  background-repeat: no-repeat;
+}
+
+/* TEXT CSS */
+h2.text {
+  vertical-align: middle;
+  font-family: "Medium", sans-serif;
+  font-size: 1.05rem;
+  font-style: normal;
+  line-height: 1.75rem;
+  letter-spacing: 0.125rem;
+}
+
+a.clients{
+  text-decoration: none;
+  color: var(--color-motion);
+}
+a.software{
+  text-decoration: none;
+  color: var(--color-graphics);
+}
+a.contact{
+  text-decoration: none;
+  color: var(--color-ui);
+}
+
+div h1 {
+  letter-spacing: 1.25px;
+  font-family: "Bold", sans-serif;
+  font-size: 1.75rem;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+
+h1#select {
+  -webkit-text-stroke: var(--text-stroke) var(--color-motion);
+  text-stroke: var(--text-stroke) var(--color-motion);
+}
+
+h1#software {
+  -webkit-text-stroke: var(--text-stroke) var(--color-graphics);
+  text-stroke: var(--text-stroke) var(--color-graphics);
+}
+h1#contact {
+  -webkit-text-stroke: var(--text-stroke) var(--color-ui);
+  text-stroke: var(--text-stroke) var(--color-ui);
+}
+
+/* MEDIUM DESKTOP */
+
+@media (max-width: 1350px) {
+
+
+  header {
+    z-index: 3;
+    letter-spacing: 3px;
+    font-family: "Bold", sans-serif;
+    font-size: 1.2rem;
+    -webkit-text-stroke: .85px var(--color-info);
+    text-stroke: .85px var(--color-info);
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    /* color: var(--color-graphics); */
+    position: fixed;
+    top: 0;
+    display: inline-flex;
+    padding: 0 75px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-header);
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur(7.5px);
+    min-width: 100vw;
+    min-height: 7.5vh;
+    border-bottom: 1.5px solid var(--color-info);
+  }
+  
+  .return-icon {
+    margin-top: 7.5px;
+    transform: scale(1.05);
+    fill: var(--color-info);
+  }
+  
+  /* FRAME */
+  
+  .frame {
+    position: relative;
+    min-width: 35vw;
+    aspect-ratio: 4 / 5;
+    max-height: calc(35vw * 5 / 4);
+    /* border: 1.5px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    margin: 17.5vh auto 0 auto;
+  }
+  
+  .panels {
+    position: relative;
+    min-width: 50%;
+    min-height: 50%;
+    border-style: solid;
+    border-color: var(--color-info);
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  /* FRAME BORDERS, PADDING & TEXT */
+  #clients-container {
+    border-width: var(--border-width) var(--border-width) var(--border-width) 0;
+    padding-right: 2.5%;
+    padding-bottom: 2.5%;
+    text-align: right;
+    color: var(--color-motion);
+    display: flex;
+    justify-content: flex-end;
+  }
+  #software-container {
+    border-width: var(--border-width) 0 var(--border-width);
+    padding: 2.5% 0 2.5% 2.5%;
+    text-align: left;
+    color: var(--color-graphics);
+    display: flex;
+    justify-content: flex-end;
+  }
+  #contact-container {
+    padding: 2.5% 2.5% 2.5% 0;
+    text-align: right;
+    color: var(--color-ui);
+    border-width: 0 var(--border-width) var(--border-width) 0;
+  }
+  #picture-container {
+    border-width: 0 0 var(--border-width) 0;
+    /* background-color: aqua; */
+  }
+   
+  .gifcontainer {
+    width: 125px;
+    height: 125px;
+    margin: 4.5% 0 0 4.5%;
+    border-radius: 100%;
+    border: 5px solid var(--color-graphics);
+    background-image: url("/video/Beach2.gif");
+    background-size: 110%;
+    background-position-x: 15%;
+    background-repeat: no-repeat;
+  }
+  
+  /* TEXT CSS */
+  
+  div h1 {
+    letter-spacing: 1.35px;
+    font-family: "Bold", sans-serif;
+    font-size: 1.35rem;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+  }
+
+  h2.text {
+    vertical-align: middle;
+    font-family: "Medium", sans-serif;
+    font-size: .85rem;
+    font-style: normal;
+    line-height: 1.75rem;
+    letter-spacing: 0.125rem;
+  }
+
+
+
+
+
+}
+/* SM DESKTOP */
+
+@media (max-width: 1175px) {
+
+
+  header {
+    z-index: 3;
+    letter-spacing: 3px;
+    font-family: "Bold", sans-serif;
+    font-size: 1.2rem;
+    -webkit-text-stroke: .85px var(--color-info);
+    text-stroke: .85px var(--color-info);
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    /* color: var(--color-graphics); */
+    position: fixed;
+    top: 0;
+    display: inline-flex;
+    padding: 0 75px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-header);
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur(7.5px);
+    min-width: 100vw;
+    min-height: 7.5vh;
+    border-bottom: 1.5px solid var(--color-info);
+  }
+  
+  .return-icon {
+    margin-top: 7.5px;
+    transform: scale(1.05);
+    fill: var(--color-info);
+  }
+  
+  /* FRAME */
+  
+  .frame {
+    position: relative;
+    min-width: 55vw;
+    aspect-ratio: 4 / 5;
+    max-height: calc(35vw * 5 / 4);
+    /* border: 1.5px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    margin: 12.5vh auto 0 auto;
+  }
+  
+  .panels {
+    position: relative;
+    min-width: 50%;
+    min-height: 70%;
+    border-style: solid;
+    border-color: var(--color-info);
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  /* FRAME BORDERS, PADDING & TEXT */
+  #clients-container {
+    border-width: var(--border-width) var(--border-width) var(--border-width) 0;
+    padding-right: 2.5%;
+    padding-bottom: 2.5%;
+    text-align: right;
+    color: var(--color-motion);
+    display: flex;
+    justify-content: flex-end;
+  }
+  #software-container {
+    border-width: var(--border-width) 0 var(--border-width);
+    padding: 2.5% 0 2.5% 2.5%;
+    text-align: left;
+    color: var(--color-graphics);
+    display: flex;
+    justify-content: flex-end;
+  }
+  #contact-container {
+    padding: 2.5% 2.5% 2.5% 0;
+    text-align: right;
+    color: var(--color-ui);
+    border-width: 0 var(--border-width) var(--border-width) 0;
+  }
+  #picture-container {
+    border-width: 0 0 var(--border-width) 0;
+    /* background-color: aqua; */
+  }
+   
+  .gifcontainer {
+    width: 125px;
+    height: 125px;
+    margin: 4.5% 0 0 4.5%;
+    border-radius: 100%;
+    border: 5px solid var(--color-graphics);
+    background-image: url("/video/Beach2.gif");
+    background-size: 110%;
+    background-position-x: 15%;
+    background-repeat: no-repeat;
+  }
+  
+  /* TEXT CSS */
+  
+  div h1 {
+    letter-spacing: 1.25px;
+    font-family: "Bold", sans-serif;
+    font-size: 1.75rem;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+  }
+
+  h2.text {
+    vertical-align: middle;
+    font-family: "Medium", sans-serif;
+    font-size: .85rem;
+    font-style: normal;
+    line-height: 1.75rem;
+    letter-spacing: 0.15rem;
+  }
+
+
+
+
+
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+
+
+  header {
+    z-index: 3;
+    letter-spacing: 3px;
+    font-family: "Bold", sans-serif;
+    font-size: .95rem;
+    -webkit-text-stroke: .35px var(--color-info);
+    text-stroke: .35px var(--color-info);
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    /* color: var(--color-graphics); */
+    position: fixed;
+    top: 0;
+    display: inline-flex;
+    padding: 0 10vw;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-header);
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur(7.5px);
+    min-width: 100vw;
+    min-height: 6.5vh;
+    border-bottom: 1.5px solid var(--color-info);
+  }
+  
+  .return-icon {
+    margin-top: 7.5px;
+    transform: scale(.95);
+    fill: var(--color-info);
+  }
+  
+  /* FRAME */
+  
+  .frame {
+    position: relative;
+    min-width: 90vw;
+    aspect-ratio: 4 / 5;
+    max-height: calc(35vw * 5 / 4);
+    /* border: 1.5px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20vh auto 0 auto;
+  }
+  
+  .panels {
+    position: relative;
+    min-width: 50%;
+    min-height: 30vh;
+    border-style: solid;
+    border-color: var(--color-info);
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+  }
+  
+  /* FRAME BORDERS, PADDING & TEXT */
+  #clients-container {
+    border-width: var(--border-width) var(--border-width) var(--border-width) 0;
+    padding-right: 2.5%;
+    padding-bottom: 2.5%;
+    text-align: right;
+    color: var(--color-motion);
+    display: flex;
+    justify-content: flex-end;
+  }
+  #software-container {
+    border-width: var(--border-width) 0 var(--border-width);
+    padding: 2.5% 0 2.5% 2.5%;
+    text-align: left;
+    color: var(--color-graphics);
+    display: flex;
+    justify-content: flex-end;
+  }
+  #contact-container {
+    padding: 2.5% 2.5% 2.5% 0;
+    text-align: right;
+    color: var(--color-ui);
+    border-width: 0 var(--border-width) var(--border-width) 0;
+  }
+  #picture-container {
+    border-width: 0 0 var(--border-width) 0;
+    /* background-color: aqua; */
+  }
+   
+  .gifcontainer {
+    width: 100px;
+    height: 100px;
+    margin: 4.5% 0 0 4.5%;
+    border-radius: 100%;
+    border: 5px solid var(--color-graphics);
+    background-image: url("/video/Beach2.gif");
+    background-size: 110%;
+    background-position-x: 15%;
+    background-repeat: no-repeat;
+  }
+  
+  /* TEXT CSS */
+  
+  div h1 {
+    letter-spacing: 1.45px;
+    font-family: "Bold", sans-serif;
+    font-size: 1.25rem;
+    -webkit-text-fill-color: red;
+    text-fill-color: red;
+  }
+  
+  h1#select {
+    -webkit-text-stroke: 0px var(--color-motion);
+    text-stroke: 0px var(--color-motion);
+    -webkit-text-fill-color: var(--color-motion);
+    text-fill-color: var(--color-motion);
+  }
+  
+  h1#software {
+    -webkit-text-stroke: 0px var(--color-motion);
+    text-stroke: 0px var(--color-motion);
+    -webkit-text-fill-color: var(--color-graphics);
+    text-fill-color: var(--color-graphics);
+  }
+  h1#contact {
+    -webkit-text-stroke: 0px var(--color-motion);
+    text-stroke: 0px var(--color-motion);
+    -webkit-text-fill-color: var(--color-ui);
+    text-fill-color: var(--color-ui);
+  }
+  h2.text {
+    vertical-align: middle;
+    font-family: "Medium", sans-serif;
+    font-size: .75rem;
+    font-style: normal;
+    line-height: 1.45rem;
+    letter-spacing: 0.05rem;
+  }
+
+
+
+
+
+}
+
+
+
