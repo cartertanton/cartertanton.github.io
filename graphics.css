@@ -58,8 +58,8 @@ header {
   letter-spacing: 3px;
   font-family: "Bold", sans-serif;
   font-size: 1.2rem;
-  -webkit-text-stroke: 0.95px var(--color-graphics);
-  text-stroke: 0.95px var(--color-graphics);
+  -webkit-text-stroke: 0.45px var(--color-graphics);
+  text-stroke: 0.45px var(--color-graphics);
   -webkit-text-fill-color: transparent;
   text-fill-color: transparent;
   position: fixed;
@@ -153,8 +153,8 @@ div.panel {
   header {
     font-size: 1rem;
     letter-spacing: 0.5px;
-    -webkit-text-stroke: 0.85px var(--color-graphics);
-    text-stroke: 0.85px var(--color-graphics);
+    -webkit-text-stroke: 0.45px var(--color-graphics);
+    text-stroke: 0.45px var(--color-graphics);
   }
 
   .return-icon {
