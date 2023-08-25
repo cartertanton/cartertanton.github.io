@@ -174,7 +174,7 @@ div.panel{
     position: fixed;
     top: 0;
     display: inline-flex;
-    padding: 0 75px;
+    padding: 0 45px;
     justify-content: space-between;
     align-items: center;
     background-color: var(--color-header);
@@ -254,7 +254,7 @@ div.panel{
   header {
     letter-spacing: 3px;
     font-family: "Bold", sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     -webkit-text-stroke: .95px var(--color-ui);
     text-stroke: .95px var(--color-ui);
     -webkit-text-fill-color: transparent;
@@ -263,7 +263,7 @@ div.panel{
     position: fixed;
     top: 0;
     display: inline-flex;
-    padding: 0 75px;
+    padding: 0 30px;
     justify-content: space-between;
     align-items: center;
     background-color: var(--color-header);
@@ -341,9 +341,9 @@ div.panel{
 
   header {
     z-index: 1000;
-    letter-spacing: 3px;
+    letter-spacing: 1.5px;
     font-family: "Bold", sans-serif;
-    font-size: 1.2rem;
+    font-size: .95rem;
     -webkit-text-stroke: .35px var(--color-ui);
     text-stroke: .35px var(--color-ui);
     -webkit-text-fill-color: transparent;
@@ -352,7 +352,7 @@ div.panel{
     position: fixed;
     top: 0;
     display: inline-flex;
-    padding: 0 12.5vw;
+    padding: 0 5.5vw;
     justify-content: space-between;
     align-items: center;
     background-color: var(--color-header);
