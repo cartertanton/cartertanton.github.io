@@ -248,9 +248,9 @@ div.panel {
     max-width: 90vw;
   }
   header {
-    font-size: 0.75rem;
+    font-size: 0.95rem;
     letter-spacing: 1.5px;
-    padding: 0 4vw;
+    padding: 0 5.5vw;
     -webkit-text-stroke: .35px var(--color-graphics);
     text-stroke: .35px var(--color-graphics);
   }
