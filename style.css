@@ -49,12 +49,12 @@ header {
   padding-bottom: 2.5vh;
 }
 
-.name {
+span.name {
   font-size: 1.1em;
   font-family: var(--font-family-1);
   letter-spacing: 4px;
   line-height: 1.1;
-  -webkit-text-stroke: .30px var(--color-fg);
+  -webkit-text-stroke: .1px var(--color-fg);
   text-stroke: .30px var(--color-fg);
   -webkit-text-fill-color: transparent;
   text-fill-color: transparent;
