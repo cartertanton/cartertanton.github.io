@@ -151,8 +151,8 @@ div.panel {
 
 @media (max-width: 1300px) {
   header {
-    font-size: 1rem;
-    letter-spacing: 0.5px;
+    font-size: 1.2rem;
+    letter-spacing: 3px;
     -webkit-text-stroke: 0.45px var(--color-graphics);
     text-stroke: 0.45px var(--color-graphics);
   }
