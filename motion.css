@@ -53,8 +53,8 @@
     letter-spacing: 3px;
       font-family: "Bold", sans-serif;
       font-size: 1.2rem;
-      -webkit-text-stroke: .45px var(--color-motion);
-      text-stroke: .45px var(--color-motion);
+      -webkit-text-stroke: .95px var(--color-motion);
+      text-stroke: .95px var(--color-motion);
       -webkit-text-fill-color: transparent;
       text-fill-color: transparent;
     position: fixed;
@@ -128,8 +128,8 @@ div.frame {
     header {
       font-size: 1.2rem;
       letter-spacing: 3px;
-      -webkit-text-stroke: .45px var(--color-motion);
-      text-stroke: .45px var(--color-motion);
+      -webkit-text-stroke: .95px var(--color-motion);
+      text-stroke: .95px var(--color-motion);
     }
   
     .return-icon {
