@@ -213,7 +213,8 @@ div.panel {
   }
   .panel img#aeon-circle {
     position: relative;
-    transform: scale(1);
+  
+    transform: scale(1) translateY(2.5%);
   }
 
   .panel.baseball {
