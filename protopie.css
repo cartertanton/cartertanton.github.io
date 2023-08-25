@@ -53,8 +53,8 @@
     letter-spacing: 3px;
     font-family: "Bold", sans-serif;
     font-size: 1.2rem;
-    -webkit-text-stroke: .95px var(--color-ui);
-    text-stroke: .95px var(--color-ui);
+    -webkit-text-stroke: .45px var(--color-ui);
+    text-stroke: .45px var(--color-ui);
     -webkit-text-fill-color: transparent;
     text-fill-color: transparent;
     /* color: var(--color-graphics); */
@@ -166,8 +166,8 @@ div.panel{
     letter-spacing: 3px;
     font-family: "Bold", sans-serif;
     font-size: 1.2rem;
-    -webkit-text-stroke: .95px var(--color-ui);
-    text-stroke: .95px var(--color-ui);
+    -webkit-text-stroke: .45px var(--color-ui);
+    text-stroke: .45px var(--color-ui);
     -webkit-text-fill-color: transparent;
     text-fill-color: transparent;
     /* color: var(--color-graphics); */
@@ -255,8 +255,8 @@ div.panel{
     letter-spacing: 3px;
     font-family: "Bold", sans-serif;
     font-size: 1.1rem;
-    -webkit-text-stroke: .95px var(--color-ui);
-    text-stroke: .95px var(--color-ui);
+    -webkit-text-stroke: .35px var(--color-ui);
+    text-stroke: .35px var(--color-ui);
     -webkit-text-fill-color: transparent;
     text-fill-color: transparent;
     /* color: var(--color-graphics); */
