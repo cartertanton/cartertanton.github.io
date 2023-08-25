@@ -54,8 +54,8 @@ header {
   font-family: var(--font-family-1);
   letter-spacing: 4px;
   line-height: 1.1;
-  -webkit-text-stroke: .45px var(--color-fg);
-  text-stroke: .45px var(--color-fg);
+  -webkit-text-stroke: .30px var(--color-fg);
+  text-stroke: .30px var(--color-fg);
   -webkit-text-fill-color: transparent;
   text-fill-color: transparent;
 }
@@ -112,8 +112,8 @@ a:hover {
   }
 
   .name {
-    -webkit-text-stroke: .45px var(--color-fg);
-    text-stroke: .45px var(--color-fg);
+    -webkit-text-stroke: .30px var(--color-fg);
+    text-stroke: .30px var(--color-fg);
     letter-spacing: 3px;
   }
 
