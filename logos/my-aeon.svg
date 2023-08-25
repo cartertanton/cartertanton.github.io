@@ -1,0 +1,21 @@
+<svg width="278" height="278" viewBox="0 0 278 278" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.91 138.77C6.91 65.62 65.62 6.91 138.77 6.91C164.2 6.91 187.75 13.82 207.84 26.37V138.76L208.15 251.15C188.06 263.39 164.2 270.61 138.77 270.61C92.31 270.61 51.49 247.06 27.95 210.96L81.32 159.47L171.42 158.84L171.73 183.01H194.33V41.76L23.86 204.07C13.19 184.92 6.91 162.63 6.91 138.77ZM0 138.77C0 215.37 62.16 277.53 138.76 277.53C215.36 277.53 277.52 215.37 277.52 138.77C277.52 62.17 215.37 0 138.77 0C62.17 0 0 62.16 0 138.77ZM171.1 73.78L171.41 134.06H107.99L171.09 73.78H171.1Z" fill="black"/>
+<mask id="mask0_6_3" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="2" y="1" width="213" height="207">
+<path d="M214.72 23.7C194.66 11.59 182.86 7.90003 170.89 5.24003C157.82 2.34003 147.33 1.73003 142.74 1.55003C134.89 1.25003 121.59 0.82003 104.91 4.78003C100.7 5.78003 85.0299 9.72003 67.0799 20.47C51.9599 29.52 42.2999 39.17 39.3999 42.16C33.2199 48.52 20.1899 63.23 11.25 85.99C4.17995 103.99 2.82995 119 2.47995 123.82C0.92995 145.59 5.79995 162.31 9.85995 175.96C13.84 189.33 18.61 199.98 22.32 207.33C88.55 146.71 148.5 84.32 214.72 23.69V23.7Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_6_3)">
+<path d="M151.71 -53.5801L-39.21 128.2" stroke="black" stroke-width="4" stroke-miterlimit="10"/>
+<path d="M156.6 -47.8201L-34.3198 133.96" stroke="black" stroke-width="3.83" stroke-miterlimit="10"/>
+<path d="M161.49 -42.05L-29.4302 139.73" stroke="black" stroke-width="3.67" stroke-miterlimit="10"/>
+<path d="M166.38 -36.29L-24.54 145.49" stroke="black" stroke-width="3.5" stroke-miterlimit="10"/>
+<path d="M171.27 -30.52L-19.6499 151.26" stroke="black" stroke-width="3.33" stroke-miterlimit="10"/>
+<path d="M176.16 -24.76L-14.7598 157.02" stroke="black" stroke-width="3.17" stroke-miterlimit="10"/>
+<path d="M181.05 -18.99L-9.87012 162.79" stroke="black" stroke-width="3" stroke-miterlimit="10"/>
+<path d="M185.94 -13.23L-4.97998 168.55" stroke="black" stroke-width="2.83" stroke-miterlimit="10"/>
+<path d="M190.83 -7.45996L-0.100098 174.32" stroke="black" stroke-width="2.67" stroke-miterlimit="10"/>
+<path d="M195.72 -1.7002L4.79004 180.08" stroke="black" stroke-width="2.5" stroke-miterlimit="10"/>
+<path d="M200.61 4.06982L9.68018 185.85" stroke="black" stroke-width="2.33" stroke-miterlimit="10"/>
+<path d="M205.5 9.82983L14.5698 191.61" stroke="black" stroke-width="2.17" stroke-miterlimit="10"/>
+<path d="M210.39 15.5999L19.46 197.38" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+</g>
+</svg>
