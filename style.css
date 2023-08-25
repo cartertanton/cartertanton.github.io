@@ -111,7 +111,7 @@ a:hover {
     font-size: .85em;
   }
 
-  .name {
+  span.name {
     -webkit-text-stroke: .30px var(--color-fg);
     text-stroke: .30px var(--color-fg);
     letter-spacing: 3px;
@@ -142,7 +142,7 @@ a:hover {
     padding-bottom: 2.5vh;
   }
   
-  .name{
+  span.name{
     font-size: 1em;
     letter-spacing: 2.5px;
     font-family: var(--font-family-1);
