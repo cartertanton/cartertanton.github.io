@@ -55,8 +55,8 @@ header {
   letter-spacing: 3px;
   font-family: "Bold", sans-serif;
   font-size: 1.2rem;
-  -webkit-text-stroke: .45px var(--color-info);
-  text-stroke: .45px var(--color-info);
+  -webkit-text-stroke: .95px var(--color-info);
+  text-stroke: .95px var(--color-info);
   -webkit-text-fill-color: transparent;
   text-fill-color: transparent;
   /* color: var(--color-graphics); */
@@ -200,8 +200,8 @@ h1#contact {
     letter-spacing: 3px;
     font-family: "Bold", sans-serif;
     font-size: 1.2rem;
-    -webkit-text-stroke: .45px var(--color-info);
-    text-stroke: .45px var(--color-info);
+    -webkit-text-stroke: .95px var(--color-info);
+    text-stroke: .95px var(--color-info);
     -webkit-text-fill-color: transparent;
     text-fill-color: transparent;
     /* color: var(--color-graphics); */
@@ -324,8 +324,8 @@ h1#contact {
     letter-spacing: 3px;
     font-family: "Bold", sans-serif;
     font-size: 1.2rem;
-    -webkit-text-stroke: .45px var(--color-info);
-    text-stroke: .45px var(--color-info);
+    -webkit-text-stroke: .95px var(--color-info);
+    text-stroke: .95px var(--color-info);
     -webkit-text-fill-color: transparent;
     text-fill-color: transparent;
     /* color: var(--color-graphics); */
