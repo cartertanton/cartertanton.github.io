@@ -54,7 +54,7 @@ span.name {
   font-family: var(--font-family-1);
   letter-spacing: 4px;
   line-height: 1.1;
-  -webkit-text-stroke: .35px var(--color-fg);
+  -webkit-text-stroke: .5px var(--color-fg);
   text-stroke: .35px var(--color-fg);
   -webkit-text-fill-color: transparent;
   text-fill-color: transparent;
