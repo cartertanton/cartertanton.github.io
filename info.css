@@ -1,14 +1,14 @@
 @font-face {
   font-family: "Italics";
-  src: url("/fonts/ABCMarfa-SemiboldItalic-Trial.otf") format("opentype");
+  src: url("/fonts/ABCMarfa-SemiboldItalic.otf") format("opentype");
 }
 @font-face {
   font-family: "Bold";
-  src: url("/fonts/ABCMarfa-Bold-Trial.otf") format("opentype");
+  src: url("/fonts/ABCMarfa-Bold.otf") format("opentype");
 }
 @font-face {
   font-family: "Medium";
-  src: url("/fonts/ABCMarfa-Light-Trial.otf") format("opentype");
+  src: url("/fonts/ABCMarfa-Light.otf") format("opentype");
 }
 
 :root {
@@ -22,7 +22,7 @@
   --color-brightwhite: #f7f6f7;
   --color-motion: #4b88be;
   --color-ui: hsla(124, 45%, 44%, 1);
-  --color-info: #F78764;
+  --color-info: #fc7753;
   --color-graphics: hsla(47, 87%, 60%, 1);
 
   /* Tokenized colors */
@@ -55,8 +55,8 @@ header {
   letter-spacing: 3px;
   font-family: "Bold", sans-serif;
   font-size: 1.2rem;
-  -webkit-text-stroke: .95px var(--color-info);
-  text-stroke: .95px var(--color-info);
+  -webkit-text-stroke: .95px var(--color-motion);
+  text-stroke: .95px var(--color-motion);
   -webkit-text-fill-color: transparent;
   text-fill-color: transparent;
   /* color: var(--color-graphics); */
@@ -71,16 +71,49 @@ header {
   -webkit-backdrop-filter: blur(7.5px);
   min-width: 100vw;
   min-height: 7.5vh;
-  border-bottom: 1.5px solid var(--color-info);
+  border-bottom: 1.5px solid var(--color-motion);
 }
 
 .return-icon {
   margin-top: 7.5px;
   transform: scale(1.05);
-  fill: var(--color-info);
+  fill: var(--color-motion);
+}
+
+main{
+  /* border: 2px solid red; */
+  position: absolute;
+ top: 0;
+ width: 100vw;
+ height: 100vh;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: flex-start;
+ gap: 2vh;
+ padding-top: 10vh;
 }
 
 /* FRAME */
+
+div.subheader{
+  /* background-color: aqua; */
+  position: relative;
+ 
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h2.clickhere{
+  font-family: var(--font-family-1);
+  font-size: .9rem;
+  letter-spacing: 4px;
+  line-height: 1.5rem;
+  color: var(--color-info);
+
+}
 
 .frame {
   position: relative;
@@ -90,7 +123,8 @@ header {
   /* border: 1.5px solid red; */
   display: flex;
   flex-wrap: wrap;
-  margin: 15vh auto 0 auto;
+  margin: 0vh auto 0 auto;
+  /* opacity: 1; */
 }
 
 .panels {
@@ -98,7 +132,7 @@ header {
   min-width: 50%;
   min-height: 50%;
   border-style: solid;
-  border-color: var(--color-info);
+  border-color: var(--color-motion);
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
@@ -110,7 +144,7 @@ header {
   padding-right: 2.5%;
   padding-bottom: 2.5%;
   text-align: right;
-  color: var(--color-motion);
+  color: var(--color-info);
   display: flex;
   justify-content: flex-end;
 }
@@ -157,7 +191,7 @@ h2.text {
 
 a.clients{
   text-decoration: none;
-  color: var(--color-motion);
+  color: var(--color-info);
 }
 a.software{
   text-decoration: none;
@@ -177,8 +211,8 @@ div h1 {
 }
 
 h1#select {
-  -webkit-text-stroke: var(--text-stroke) var(--color-motion);
-  text-stroke: var(--text-stroke) var(--color-motion);
+  -webkit-text-stroke: var(--text-stroke) var(--color-info);
+  text-stroke: var(--text-stroke) var(--color-info);
 }
 
 h1#software {
@@ -188,6 +222,27 @@ h1#software {
 h1#contact {
   -webkit-text-stroke: var(--text-stroke) var(--color-ui);
   text-stroke: var(--text-stroke) var(--color-ui);
+}
+
+.bio-frame{
+  position: relative;
+  font-family: var(--font-family-1);
+  color: var(--color-motion);
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8vh;
+  text-align: center;
+}
+
+div.text-bio{
+  font-size: .8rem;
+  line-height: 1.5;
+  max-width: 35vw;
+  letter-spacing: 2px;
 }
 
 /* MEDIUM DESKTOP */
@@ -200,8 +255,8 @@ h1#contact {
     letter-spacing: 3px;
     font-family: "Bold", sans-serif;
     font-size: 1.2rem;
-    -webkit-text-stroke: .95px var(--color-info);
-    text-stroke: .95px var(--color-info);
+    -webkit-text-stroke: .95px var(--color-motion);
+    text-stroke: .95px var(--color-motion);
     -webkit-text-fill-color: transparent;
     text-fill-color: transparent;
     /* color: var(--color-graphics); */
@@ -216,13 +271,13 @@ h1#contact {
     -webkit-backdrop-filter: blur(7.5px);
     min-width: 100vw;
     min-height: 7.5vh;
-    border-bottom: 1.5px solid var(--color-info);
+    border-bottom: 1.5px solid var(--color-motion);
   }
   
   .return-icon {
     margin-top: 7.5px;
     transform: scale(1.05);
-    fill: var(--color-info);
+    fill: var(--color-motion);
   }
   
   /* FRAME */
@@ -235,15 +290,17 @@ h1#contact {
     /* border: 1.5px solid red; */
     display: flex;
     flex-wrap: wrap;
-    margin: 17.5vh auto 0 auto;
+    margin: 0vh auto 0 auto;
   }
+
+
   
   .panels {
     position: relative;
     min-width: 50%;
     min-height: 50%;
     border-style: solid;
-    border-color: var(--color-info);
+    border-color: var(--color-motion);
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
@@ -255,7 +312,7 @@ h1#contact {
     padding-right: 2.5%;
     padding-bottom: 2.5%;
     text-align: right;
-    color: var(--color-motion);
+    color: var(--color-info);
     display: flex;
     justify-content: flex-end;
   }
@@ -310,10 +367,34 @@ h1#contact {
   }
 
 
-
-
-
+  .bio-frame{
+    opacity: 1;
+    /* background-color: aqua; */
+    position: absolute;
+    top: 0;
+    font-family: var(--font-family-1);
+    color: var(--color-motion);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* padding-top: 16.5vh; */
+    align-items: center;
+    margin-top: 1.5vh;
+  
+  }
+  
+  div.text-bio{
+    font-size: .8rem;
+    line-height: 1.5;
+    /* border: 2px solid red; */
+    max-width: 45vw;
+    letter-spacing: 1.35px;
+  }
 }
+
+
 /* SM DESKTOP */
 
 @media (max-width: 1175px) {
@@ -324,8 +405,8 @@ h1#contact {
     letter-spacing: 3px;
     font-family: "Bold", sans-serif;
     font-size: 1.2rem;
-    -webkit-text-stroke: .95px var(--color-info);
-    text-stroke: .95px var(--color-info);
+    -webkit-text-stroke: .95px var(--color-motion);
+    text-stroke: .95px var(--color-motion);
     -webkit-text-fill-color: transparent;
     text-fill-color: transparent;
     /* color: var(--color-graphics); */
@@ -340,26 +421,26 @@ h1#contact {
     -webkit-backdrop-filter: blur(7.5px);
     min-width: 100vw;
     min-height: 7.5vh;
-    border-bottom: 1.5px solid var(--color-info);
+    border-bottom: 1.5px solid var(--color-motion);
   }
   
   .return-icon {
     margin-top: 7.5px;
     transform: scale(1.05);
-    fill: var(--color-info);
+    fill: var(--color-motion);
   }
   
   /* FRAME */
   
   .frame {
     position: relative;
-    min-width: 55vw;
+    min-width: 65vw;
     aspect-ratio: 4 / 5;
     max-height: calc(35vw * 5 / 4);
     /* border: 1.5px solid red; */
     display: flex;
     flex-wrap: wrap;
-    margin: 12.5vh auto 0 auto;
+    margin: 2.5vh auto 0 auto;
   }
   
   .panels {
@@ -367,7 +448,7 @@ h1#contact {
     min-width: 50%;
     min-height: 70%;
     border-style: solid;
-    border-color: var(--color-info);
+    border-color: var(--color-motion);
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
@@ -379,7 +460,7 @@ h1#contact {
     padding-right: 2.5%;
     padding-bottom: 2.5%;
     text-align: right;
-    color: var(--color-motion);
+    color: var(--color-info);
     display: flex;
     justify-content: flex-end;
   }
@@ -433,6 +514,31 @@ h1#contact {
     letter-spacing: 0.15rem;
   }
 
+  .bio-frame{
+    
+    opacity: 1;
+    /* background-color: aqua; */
+    position: absolute;
+    top: 0;
+    font-family: var(--font-family-1);
+    color: var(--color-motion);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* padding-top: 16.5vh; */
+    align-items: center;
+    margin-top: 2.5vh;
+  }
+  
+  div.text-bio{
+    font-size: .8rem;
+    line-height: 1.5;
+    /* border: 2px solid red; */
+    max-width: 65vw;
+    letter-spacing: 1.35px;
+  }
 
 
 
@@ -440,7 +546,7 @@ h1#contact {
 }
 
 /* MOBILE */
-@media (max-width: 900px) {
+@media (max-width: 750px) {
 
 
   header {
@@ -448,8 +554,8 @@ h1#contact {
     letter-spacing: 3px;
     font-family: "Bold", sans-serif;
     font-size: .95rem;
-    -webkit-text-stroke: .35px var(--color-info);
-    text-stroke: .35px var(--color-info);
+    -webkit-text-stroke: .35px var(--color-motion);
+    text-stroke: .35px var(--color-motion);
     -webkit-text-fill-color: transparent;
     text-fill-color: transparent;
     /* color: var(--color-graphics); */
@@ -464,13 +570,13 @@ h1#contact {
     -webkit-backdrop-filter: blur(7.5px);
     min-width: 100vw;
     min-height: 6.5vh;
-    border-bottom: 1.5px solid var(--color-info);
+    border-bottom: 1.5px solid var(--color-motion);
   }
   
   .return-icon {
     margin-top: 7.5px;
     transform: scale(.95);
-    fill: var(--color-info);
+    fill: var(--color-motion);
   }
   
   /* FRAME */
@@ -483,7 +589,7 @@ h1#contact {
     /* border: 1.5px solid red; */
     display: flex;
     flex-wrap: wrap;
-    margin: 15vh auto 0 auto;
+    margin: 3vh auto 0 auto;
   }
   
   .panels {
@@ -491,7 +597,7 @@ h1#contact {
     min-width: 50%;
     min-height: 30vh;
     border-style: solid;
-    border-color: var(--color-info);
+    border-color: var(--color-motion);
     display: flex;
     flex-direction: column;
     gap: 2vh;
@@ -503,7 +609,7 @@ h1#contact {
     padding-right: 2.5%;
     padding-bottom: 2.5%;
     text-align: right;
-    color: var(--color-motion);
+    color: var(--color-info);
     display: flex;
     justify-content: flex-end;
   }
@@ -551,8 +657,8 @@ h1#contact {
   h1#select {
     -webkit-text-stroke: 0px var(--color-motion);
     text-stroke: 0px var(--color-motion);
-    -webkit-text-fill-color: var(--color-motion);
-    text-fill-color: var(--color-motion);
+    -webkit-text-fill-color: var(--color-info);
+    text-fill-color: var(--color-info);
   }
   
   h1#software {
@@ -576,11 +682,36 @@ h1#contact {
     letter-spacing: 0.05rem;
   }
 
-
+  .bio-frame{
+    opacity: 1;
+    /* background-color: aqua; */
+    position: absolute;
+    top: 0;
+    font-family: var(--font-family-1);
+    color: var(--color-motion);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 14vh;
+    /* padding-top: 16.5vh; */
+    align-items: center;
+    text-align: center;
+  }
+  
+  div.text-bio{
+    font-size: .65rem;
+    line-height: 1.45;
+    /* border: 2px solid red; */
+    max-width: 90vw;
+    letter-spacing: 1.35px;
+  }
 
 
 
 }
 
-
-
+.hidden{
+  display: none;
+}
