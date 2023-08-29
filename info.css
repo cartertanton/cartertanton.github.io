@@ -693,6 +693,12 @@ div.text-bio{
     letter-spacing: 0.05rem;
   }
 
+  div.emptycontainer{
+    background-color: transparent;
+    width: 100vw;
+    height: 100vh;
+  }
+
   .bio-frame{
     opacity: 1;
     /* background-color: aqua; */
@@ -702,7 +708,7 @@ div.text-bio{
     font-family: var(--font-family-1);
     color: var(--color-motion);
     width: 100vw;
-    height: 120vh;
+    height: 140vh;
     /* min-height: 120vh; */
     display: flex;
     flex-direction: column;
