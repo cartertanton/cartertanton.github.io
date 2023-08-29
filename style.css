@@ -1,24 +1,29 @@
 @font-face {
   font-family: 'Italics';
-  src: url('/fonts/ABCMarfa-SemiboldItalic-Trial.otf') format('opentype');
+  src: url('/fonts/ABCMarfa-SemiboldItalic.otf') format('opentype');
 }
 @font-face {
   font-family: 'Medium';
-  src: url('/fonts/ABCMarfa-Medium-Trial.otf') format('opentype');
+  src: url('/fonts/ABCMarfa-Medium.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Light';
+  src: url('/fonts/ABCMarfa-Light.otf') format('opentype');
 }
 
 :root {
   /* font families */
   --font-family-1: 'Medium', sans-serif;
   --font-family-2: 'Italics', sans-serif;
+  --font-family-3: 'Light', sans-serif;
 
   /* primitives */
   --color-blackdark: hsla(40, 30%, 4%, 1);
   --color-brightwhite: #F7F6F7;
-  --color-motion: hsla(208, 47%, 52%, 1);
-  --color-ui: hsla(124, 55%, 44%, 1);
-  --color-info: #F78764;
-  --color-graphics: hsla(47, 87%, 60%, 1);
+  --color-motion: #4b88be;
+  --color-ui: #32ae3b;
+  --color-composites: #FC7753;
+  --color-graphics: #f2cb40;
 
   /* Tokenized colors */
   --color-fg: var(--color-blackdark);
@@ -89,19 +94,17 @@ a {
 .menu .graphics {
   color: var(--color-graphics);
 }
+.menu .composites {
+  color: var(--color-composites);
+}
 
 .menu .info {
-  color: var(--color-info);
+  color: var(--color-motion);
 }
-
-a:hover {
-  font-family: var(--font-family-2);
-}
-
-
 
 /* Small desktop breakpoint */
 @media (max-width: 1300px) {
+
   body {
     line-height: 1.4;
     width: 75vw;
@@ -135,42 +138,43 @@ a:hover {
 
 @media (min-width: 300px) and (max-width: 770px) {
 
+  body{
+    font-family: var(--font-family-3);
+  }
   header {
-    color: var(--color-fg);
     position: relative;
-    padding-top: 9vh;
+    padding-top: 8.5vh;
     padding-bottom: 2.5vh;
+    color: var(--color-motion);
   }
   
   span.name{
     font-size: 1em;
-    letter-spacing: 2.5px;
-    font-family: var(--font-family-1);
+    letter-spacing: 4px;
+    font-family: var(--font-family-3);
     -webkit-text-stroke: 0px var(--color-fg);
     text-stroke: 0px var(--color-fg);
-    -webkit-text-fill-color: var(--color-fg);
-    text-fill-color: var(--color-fg);
+    -webkit-text-fill-color: var(--color-motion);
+    text-fill-color: var(--color-motion);
   }
 
 h1, span{
-  line-height: 1.45;
+  line-height: 1.35;
   font-size: .55em;
-  letter-spacing: 2.5px;
-  max-width: 70vw;
+  letter-spacing: 4px;
+  max-width: 100%;
+ 
 }
 a{
   font-size: 1.25em;
 }
 .menu{
-  padding: 2vh 0;
+  padding: 1vh 0;
   flex-direction: column;
   align-items: flex-start;
   min-height: 5vh;
-  gap: 2vh;
+  gap: 1.25vh;
+  border-color: var(--color-graphics);
 }
 
 }
-
-
-
-
