@@ -45,6 +45,14 @@ body,
   box-sizing: border-box;
 }
 
+div.subheader:hover {
+  cursor: wait; /* Change to the desired cursor type */
+}
+
+a:hover {
+  cursor: wait;
+}
+
 body {
   background-color: var(--color-bg);
   font-size: 16px;
@@ -549,7 +557,7 @@ div.text-bio{
 @media (max-width: 750px) {
 
   main{
-    padding-top: 8.5vh;
+    padding-top: 9.5vh;
   }
 
   header {
@@ -572,7 +580,7 @@ div.text-bio{
     backdrop-filter: blur(7.5px);
     -webkit-backdrop-filter: blur(7.5px);
     min-width: 100vw;
-    min-height: 6.5vh;
+    min-height: 7vh;
     border-bottom: 1.5px solid var(--color-motion);
   }
   
@@ -592,7 +600,7 @@ div.text-bio{
     /* border: 1.5px solid red; */
     display: flex;
     flex-wrap: wrap;
-    margin: 1.25vh auto 0 auto;
+    margin: 1.5vh auto 0 auto;
   }
   
   .panels {
@@ -688,17 +696,18 @@ div.text-bio{
   .bio-frame{
     opacity: 1;
     /* background-color: aqua; */
+    /* border: 2px solid red; */
     position: absolute;
     top: 0;
     font-family: var(--font-family-1);
     color: var(--color-motion);
     width: 100vw;
-    height: 100vh;
+    height: none;
+    min-height: 120vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     padding-top: 12vh;
-    /* padding-top: 16.5vh; */
     align-items: center;
     text-align: center;
   }
