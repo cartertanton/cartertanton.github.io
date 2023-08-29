@@ -702,8 +702,7 @@ div.text-bio{
     font-family: var(--font-family-1);
     color: var(--color-motion);
     width: 100vw;
-    height: none;
-    min-height: 200vh;
+    height: 150vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
