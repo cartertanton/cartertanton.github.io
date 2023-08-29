@@ -502,8 +502,8 @@ div.panel.brownhair {
     position: absolute;
     top: 2.5%;
     font-family: "Medium", sans-serif;
-    font-size: .85rem;
-    letter-spacing: 4px;
+    font-size: .825rem;
+    letter-spacing: 2.5px;
     text-align: center;
     padding-bottom: 2.5%;
     color: var(--color-composites);
