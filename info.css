@@ -703,7 +703,7 @@ div.text-bio{
     color: var(--color-motion);
     width: 100vw;
     height: none;
-    min-height: 120vh;
+    min-height: 200vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
