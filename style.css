@@ -143,14 +143,14 @@ a {
   }
   header {
     position: relative;
-    padding-top: 8.5vh;
-    padding-bottom: 2.5vh;
+    padding-top: 7.75vh;
+    padding-bottom: .8vh;
     color: var(--color-motion);
   }
   
   span.name{
     font-size: 1em;
-    letter-spacing: 4px;
+    letter-spacing: 3px;
     font-family: var(--font-family-3);
     -webkit-text-stroke: 0px var(--color-fg);
     text-stroke: 0px var(--color-fg);
@@ -159,9 +159,9 @@ a {
   }
 
 h1, span{
-  line-height: 1.35;
-  font-size: .55em;
-  letter-spacing: 4px;
+  line-height: 1.22;
+  font-size: .45em;
+  letter-spacing: 3px;
   max-width: 100%;
  
 }
