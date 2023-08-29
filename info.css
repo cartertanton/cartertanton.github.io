@@ -548,6 +548,9 @@ div.text-bio{
 /* MOBILE */
 @media (max-width: 750px) {
 
+  main{
+    padding-top: 8.5vh;
+  }
 
   header {
     z-index: 3;
@@ -589,7 +592,7 @@ div.text-bio{
     /* border: 1.5px solid red; */
     display: flex;
     flex-wrap: wrap;
-    margin: 3vh auto 0 auto;
+    margin: 1.25vh auto 0 auto;
   }
   
   .panels {
@@ -694,7 +697,7 @@ div.text-bio{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding-top: 14vh;
+    padding-top: 12vh;
     /* padding-top: 16.5vh; */
     align-items: center;
     text-align: center;
@@ -704,8 +707,10 @@ div.text-bio{
     font-size: .65rem;
     line-height: 1.45;
     /* border: 2px solid red; */
-    max-width: 90vw;
-    letter-spacing: 1.35px;
+    max-width: 75vw;
+    letter-spacing: 1.15px;
+    overflow-wrap: break-word;
+    hyphens: auto;
   }
 
 
