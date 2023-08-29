@@ -147,10 +147,8 @@ div.panel.leaves {
 }
 
 div.panel img.leaves {
-  position: absolute;
-  min-width: fit-content;
-  max-height: 85%;
-  margin-top: 2.5%;
+position: relative;
+margin-top: 3%;
 }
 
 /* BROWNHAIR */
@@ -269,10 +267,8 @@ div.panel.brownhair {
   }
   
   div.panel img.leaves {
-    position: absolute;
-    min-width: fit-content;
-    max-height: 85%;
-    margin-top: 2.5%;
+  position: relative;
+  margin-top: 3%;
   }
   
   /* BROWNHAIR */
@@ -502,8 +498,8 @@ div.panel.brownhair {
     position: absolute;
     top: 2.5%;
     font-family: "Medium", sans-serif;
-    font-size: .825rem;
-    letter-spacing: 2.5px;
+    font-size: .85rem;
+    letter-spacing: 4px;
     text-align: center;
     padding-bottom: 2.5%;
     color: var(--color-composites);
@@ -549,7 +545,7 @@ div.panel.brownhair {
   div.panel.leaves {
     position: relative;
     width: 100%;
-    height: 72vh;
+    height: 65vh;
     min-height: fit-content;
     border: 1.5px solid var(--color-composites);
     border-radius: 8px 8px 0 0;
@@ -567,9 +563,9 @@ div.panel.brownhair {
   position: relative;
   min-width: auto;
   width: auto;
-  max-width: 90%;
+  max-width: 80%;
   height: auto;
-  max-height: 56.5vh;
+  max-height: 85%;
   margin-top: 4%;
   }
 
