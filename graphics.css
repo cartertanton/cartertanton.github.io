@@ -1,14 +1,14 @@
 @font-face {
   font-family: "Italics";
-  src: url("/fonts/ABCMarfa-SemiboldItalic-Trial.otf") format("opentype");
+  src: url("/fonts/ABCMarfa-SemiboldItalic.otf") format("opentype");
 }
 @font-face {
   font-family: "Bold";
-  src: url("/fonts/ABCMarfa-Bold-Trial.otf") format("opentype");
+  src: url("/fonts/ABCMarfa-Bold.otf") format("opentype");
 }
 @font-face {
   font-family: "Medium";
-  src: url("/fonts/ABCMarfa-Light-Trial.otf") format("opentype");
+  src: url("/fonts/ABCMarfa-Light.otf") format("opentype");
 }
 
 :root {
@@ -98,7 +98,7 @@ header {
 h2 {
   position: absolute;
   top: 2.5%;
-  font-family: "Italics", sans-serif;
+  font-family: "Medium", sans-serif;
   font-size: 1rem;
   letter-spacing: 4px;
   text-align: center;
@@ -135,12 +135,8 @@ div.panel {
   transform: scale(0.9);
   top: 8.5%;
 }
-.panel img#aeon-circle {
-  position: absolute;
-  transform: scale(1);
-  top: 8.5%;
-  left: 0;
-}
+
+
 
 .panel img.phone {
   max-width: 90%;
@@ -211,11 +207,7 @@ div.panel {
     transform: scale(0.95);
     max-height: 70vh;
   }
-  .panel img#aeon-circle {
-    position: relative;
-  
-    transform: scale(1) translateY(2.5%);
-  }
+ 
 
   .panel.baseball {
     padding-top: 5%;
