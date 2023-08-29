@@ -85,7 +85,7 @@ header {
 .scroll-container {
   border: 2px solid transparent;
   max-width: 90vw;
-  margin: 9vh auto 5vh auto;
+  margin: 9vh auto 7.5vh auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -245,6 +245,7 @@ div.panel {
     padding: 0 5.5vw;
     -webkit-text-stroke: .35px var(--color-graphics);
     text-stroke: .35px var(--color-graphics);
+    min-height: 7vh;
   }
 
   .return-icon {
@@ -255,8 +256,8 @@ div.panel {
     flex-direction: column;
     gap: 4.5vh;
     margin-top: 7.5vh;
-    padding-top: 4.5vh;
-    padding-bottom: 2vh;
+    padding-top: 3.75vh;
+    padding-bottom: 6vh;
   }
 
   h2 {
