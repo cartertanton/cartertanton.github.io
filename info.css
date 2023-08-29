@@ -125,7 +125,7 @@ h2.clickhere{
 
 .frame {
   position: relative;
-  min-width: 35vw;
+  min-width: 45vw;
   aspect-ratio: 4 / 5;
   max-height: calc(35vw * 5 / 4);
   /* border: 1.5px solid red; */
@@ -292,7 +292,7 @@ div.text-bio{
   
   .frame {
     position: relative;
-    min-width: 35vw;
+    min-width: 45vw;
     aspect-ratio: 4 / 5;
     max-height: calc(35vw * 5 / 4);
     /* border: 1.5px solid red; */
