@@ -293,7 +293,7 @@ div.panel {
     padding-bottom: 7.5%;
     justify-content: space-around;
     text-align: center;
-    border-width: .5px;
+    border-width: .8px;
   }
   .panel.baseball {
     height: 80vh;
