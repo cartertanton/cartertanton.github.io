@@ -254,8 +254,8 @@ div.panel {
     font-size: 0.95rem;
     letter-spacing: 1.5px;
     padding: 0 5.5vw;
-    -webkit-text-stroke: .8px var(--color-blackdark);
-    text-stroke: .8px var(--color-blackdark);
+    -webkit-text-stroke: .35px var(--color-blackdark);
+    text-stroke: .35px var(--color-blackdark);
     min-height: 7vh;
   }
 
