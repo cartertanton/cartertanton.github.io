@@ -51,7 +51,7 @@ h1 {
   line-height: 2.25;
   color: var(--color-brightwhite);
   position: relative;
-  padding-top: 2.5vh;
+  padding-top: 20vh;
   padding-bottom: 3vh;
   text-align: center;
   letter-spacing: .6rem;
@@ -132,7 +132,7 @@ a {
   header {
     position: relative;
     font-size: 1.5em;
-    padding-top: 10vh;
+    padding-top: 2.5vh;
     padding-bottom: .5vh;
     color: var(--color-brightwhite);
   }
