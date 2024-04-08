@@ -157,7 +157,7 @@ a {
   .links{
     padding-top: 3vh;
     flex-direction: column;
-    gap: 5vh;
+    gap: 2.5vh;
   }
 
   .selfie {
