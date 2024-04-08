@@ -185,8 +185,8 @@ h2 {
   header {
     min-height: 7vh;
     font-size: .95rem;
-    -webkit-text-stroke: .45px var(--color-blackdark);
-    text-stroke: .45px var(--color-blackdark);
+    -webkit-text-stroke: .25px var(--color-blackdark);
+    text-stroke: .25px var(--color-blackdark);
     letter-spacing: 1.5px;
     padding: 0 5.5vw;
   }
