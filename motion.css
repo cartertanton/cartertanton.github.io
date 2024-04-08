@@ -1,63 +1,144 @@
 @font-face {
-    font-family: "Italics";
-    src: url("/fonts/ABCMarfa-SemiboldItalic-Trial.otf") format("opentype");
-  }
-  @font-face {
-    font-family: "Bold";
-    src: url("/fonts/ABCMarfa-Bold-Trial.otf") format("opentype");
-  }
-  @font-face {
-    font-family: "Medium";
-    src: url("/fonts/ABCMarfa-Light-Trial.otf") format("opentype");
-  }
-  
-  :root {
-    /* font families */
-    --font-family-1: "Medium", sans-serif;
-    --font-family-2: "Italics", sans-serif;
-  
-    /* primitives */
-    --color-blackdark: #0d0b07;
-    --color-blacklight: hsla(0, 0%, 20%, 0.05);
-    --color-blacklight2: hsla(0, 0%, 20%, 0.2);
-    --color-brightwhite: #F5F5F5;
-    --color-motion: #4b88be;
-    --color-motionvideo: hsla(358, 79%, 70%, .15);
-    --color-ui: (124, 45%, 44%, 1)hsla;
-    --color-composites: #4b88be;
-    --color-graphics: hsla(47, 87%, 60%, 1);
-  
-    /* Tokenized colors */
-    --color-fg: var(--color-blackdark);
-    --color-bg: var(--color-brightwhite);
-    --color-header: var(--color-blacklight);
-    --color-video: var(--color-blacklight2);
-  }
-  
-  html,
-  body,
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    background-color: var(--color-bg);
-    font-size: 16px;
-  }
-  
+  font-family: "Italics";
+  src: url("/fonts/ABCMarfa-SemiboldItalic.otf") format("opentype");
+}
+@font-face {
+  font-family: "Bold";
+  src: url("/fonts/ABCMarfa-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "Medium";
+  src: url("/fonts/ABCMarfa-Light.otf") format("opentype");
+}
+
+:root {
+  /* font families */
+  --font-family-1: "Medium", sans-serif;
+  --font-family-2: "Italics", sans-serif;
+
+  /* primitives */
+  --color-blackdark: hsla(40, 15%, 5%, 1);
+  --color-blacklight: hsla(0, 0%, 20%, 0.05);
+  --color-brightwhite: hsl(0, 0%, 97%);
+  --color-motion: #4b88be;
+  --color-motionvideo: hsla(358, 79%, 70%, .15);
+  --color-ui: (124, 45%, 44%, 1)hsla;
+  --color-composites: #4b88be;
+  --color-graphics: hsla(47, 87%, 60%, 1);
+
+  /* Tokenized colors */
+  --color-fg: var(--color-blackdark);
+  --color-bg: var(--color-brightwhite);
+  --color-header: var(--color-blacklight);
+  --color-video: var(--color-blacklight2);
+}
+
+html,
+body,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-bg);
+  font-size: 16px;
+}
+
+header {
+  z-index: 3;
+  letter-spacing: 3px;
+  font-family: "Bold", sans-serif;
+  font-size: 1.2rem;
+  -webkit-text-stroke: 0.95px var(--color-blackdark);
+  text-stroke: 0.95px var(--color-blackdark);
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  position: fixed;
+  top: 0;
+  display: inline-flex;
+  padding: 0 75px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-header);
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
+  min-width: 100vw;
+  min-height: 7.5vh;
+  border-bottom: 1.5px solid var(--color-blackdark);
+}
+
+.return-icon {
+  margin-top: 7.5px;
+  transform: scale(1.05);
+  fill: var(
+    --color-blackdark
+  );
+}
+
+
+
+div.scroll-container {
+  top: 14.5vh;
+  margin: auto;
+  margin-bottom: 12vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100vw;
+  /* height: 50vh; */
+  gap: 12vh;
+  /* height: fit-content; */
+  padding-bottom: 4.5vh;
+}
+
+.panel {
+  position: relative;
+  min-width: 65%;
+   border: 1px solid var(--color-blackdark);
+   /* border-radius: 8px 8px 0 0; */
+   height: 100%;
+}
+
+
+div.frame {
+position: relative;
+overflow: hidden;
+margin: auto;
+
+}
+
+h2 {
+ 
+  top: 0;
+  font-family: "Medium", sans-serif;
+  font-size: .8rem;
+  letter-spacing: 10px;
+  text-align: center;
+  padding-bottom: 1.25%;
+  padding-top: 1.25%;
+  color: var(--color-blackdark);
+  border-bottom: 1.5px solid var(--color-brightwhite);
+  min-width: 100%;
+
+}
+
+/* SMALL DESKTOP BREAKPOINT */
+@media (max-width: 1300px) {
+
   header {
-    letter-spacing: 3px;
     z-index: 3;
     letter-spacing: 3px;
-      font-family: "Bold", sans-serif;
-      font-size: 1.2rem;
-      -webkit-text-stroke: .95px var(--color-motion);
-      text-stroke: .95px var(--color-motion);
-      -webkit-text-fill-color: transparent;
-      text-fill-color: transparent;
+    font-family: "Bold", sans-serif;
+    font-size: 1.2rem;
+    -webkit-text-stroke: 0.95px var(--color-blackdark);
+    text-stroke: 0.95px var(--color-blackdark);
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
     position: fixed;
+    top: 0;
     display: inline-flex;
     padding: 0 75px;
     justify-content: space-between;
@@ -67,125 +148,76 @@
     -webkit-backdrop-filter: blur(7.5px);
     min-width: 100vw;
     min-height: 7.5vh;
-    color: var(--color-motion);
-    border-bottom: 1.5px solid var(--color-motion);
+    border-bottom: 1.5px solid var(--color-blackdark);
   }
-  
-  .return-icon {
-    margin-top: 7.5px;
-    transform: scale(1.05);
-    fill: var(
-      --color-motion
-    );
-  }
-  
 
-  
-  div.scroll-container {
-    top: 14.5vh;
-    margin: auto;
+  .return-icon {
+    transform: scale(1);
+  }
+  .panel {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  min-width: 70%;
+   border: 1.5px solid var(--color-blackdark);
+   /* border-radius: 8px 8px 0 0; */
+   height: 100%;
+  }
+
+  h2 {
+    top: 0;
+    font-family: "Medium", sans-serif;
+    font-size: .8rem;
+    letter-spacing: 7.25px;
+    text-align: center;
+    padding-bottom: 1.25%;
+    padding-top: 1.25%;
+    color: var(--color-blackdark);
+    border-bottom: 1.5px solid var(--color-brightwhite);
+    min-width: 100%;
+  }
+
+ 
+}
+
+/* MOBILE BREKAPOINT */
+
+@media (min-width: 300px) and (max-width: 770px) {
+
+  header {
+    min-height: 7vh;
+    font-size: .95rem;
+    -webkit-text-stroke: .75px var(--color-blackdark);
+    text-stroke: .75px var(--color-blackdark);
+    letter-spacing: 1.5px;
+    padding: 0 5.5vw;
+  }
+
+  .return-icon {
+    transform: scale(.9);
+  }
+ 
+  div.scroll-container {
+    top: 12vh;
     max-width: 90vw;
-    gap: 12vh;
-    height: fit-content;
-    padding-bottom: 6vh;
+    gap: 5.5vh;
+    margin-bottom: 17.5vh;
   }
 
   .panel {
-    position: relative;
-    min-width: 60%;
-     border: 1.5px solid var(--color-motion);
-     border-radius: 8px 8px 0 0;
-     height: object-fit;
+    min-width: 100%;
+    border-width: 1px;
   }
- 
-div.frame {
-  position: relative;
-  overflow: hidden;
-  margin: auto;
- 
-}
+
   
   h2 {
-    font-family: "Medium", sans-serif;
-    font-size: 1.3rem;
-    letter-spacing: 5px;
+    top: 0;
+    font-family: "Light", sans-serif;
+    font-size: .7rem;
+    letter-spacing: 7.25px;
     text-align: center;
-    color: var(--color-motion);
-    border-bottom: 1.5px solid var(--color-motion);
+    padding-bottom: 1.75%;
+    padding-top: 1.75%;
+    color: var(--color-blackdark);
+    border-bottom: 1.5px solid var(--color-brightwhite);
     min-width: 100%;
-    min-height: 4.5vh;
-    margin-top: 2.25vh;
   
   }
-  
-  /* SMALL DESKTOP BREAKPOINT */
-  @media (max-width: 1300px) {
-  
-    header {
-      font-size: 1.2rem;
-      letter-spacing: 3px;
-      -webkit-text-stroke: .95px var(--color-motion);
-      text-stroke: .95px var(--color-motion);
-    }
-  
-    .return-icon {
-      transform: scale(1);
-    }
-    .panel {
-      min-width: 75%;
-    }
-
-    h2 {
-      font-size: 1.12em;
-      letter-spacing: 5px;
-    }
-  
-   
-  }
-  
-  /* MOBILE BREKAPOINT */
-  
-  @media (min-width: 300px) and (max-width: 770px) {
-  
-    header {
-      min-height: 7vh;
-      font-size: .9rem;
-      letter-spacing: 1.5px;
-      padding: 0 5.5vw;
-      -webkit-text-stroke: .35px var(--color-motion);
-      text-stroke: .35px var(--color-motion);
-    }
-  
-    .return-icon {
-      transform: scale(.9);
-    }
-   
-    div.scroll-container {
-      top: 12vh;
-      max-width: 90vw;
-      gap: 5.5vh;
-    margin-bottom: 14.25vh;
-    }
-  
-    .panel {
-      min-width: 100%;
-    }
-
-    
-    h2 {
-      font-size: .85rem;
-      letter-spacing: 3px;
-      text-align: center;
-      color: var(--color-motion);
-      border-bottom: 1.5px solid var(--color-motion);
-      padding-bottom: 1.25vh;
-      min-width: 100%;
-      min-height: 1.5vh;
-      margin-top: 1.25vh;
-    
-    }
-  
