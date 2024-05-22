@@ -111,7 +111,7 @@ a {
     position: relative;
     padding-top: 20vh;
     padding-bottom: 2vh;
-    text-align: center;
+    text-align: left;
     letter-spacing: .6rem;
   }
  
@@ -139,8 +139,6 @@ a {
   
   h1 {
       position: relative;
-    /* font-size: 1.5em; */
-    /* padding-top: 2vh; */
     padding-bottom: .8vh;
     color: var(--color-brightwhite);
     line-height: 2;
