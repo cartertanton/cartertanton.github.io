@@ -52,7 +52,7 @@ h1 {
   color: var(--color-brightwhite);
   position: relative;
   padding-top: 20vh;
-  padding-bottom: 2.25vh;
+  padding-bottom: 1.8vh;
   text-align: left;
   letter-spacing: .6rem;
 }
@@ -110,7 +110,7 @@ a {
     color: var(--color-brightwhite);
     position: relative;
     padding-top: 20vh;
-    padding-bottom: 2vh;
+    padding-bottom: 1.8vh;
     text-align: left;
     letter-spacing: .6rem;
   }
@@ -145,7 +145,7 @@ a {
     font-size: .45em;
     letter-spacing: 3px;
     max-width: 100%;
-    padding-top: 0;
+    padding-top: 1vh;
   }
   
   a {
