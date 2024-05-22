@@ -134,6 +134,7 @@ a {
     font-size: 1.5em;
     padding-top: 3.25vh;
     padding-bottom: .5vh;
+     text-align: left;
     color: var(--color-brightwhite);
   }
   
