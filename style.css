@@ -52,7 +52,7 @@ h1 {
   color: var(--color-brightwhite);
   position: relative;
   padding-top: 20vh;
-  padding-bottom: 3vh;
+  padding-bottom: 2.25vh;
   text-align: left;
   letter-spacing: .6rem;
 }
