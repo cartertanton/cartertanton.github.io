@@ -52,9 +52,9 @@ h1 {
   color: var(--color-brightwhite);
   position: relative;
   padding-top: 20vh;
-  padding-bottom: 3vh;
-  text-align: center;
-  letter-spacing: 1rem;
+  padding-bottom: 1.8vh;
+  text-align: left;
+  letter-spacing: .6rem;
 }
 
 .image {
@@ -65,7 +65,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   height: 20%;
   padding: 2vh 0;
   
@@ -74,7 +74,7 @@ h1 {
 .selfie {
   height: 40%;
   width: 30%;
-  /* border-radius: 50%; */
+  border-radius: 50%;
 }
 
 .links{
@@ -83,16 +83,9 @@ h1 {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
-  gap: 12.5vw;
-}
-
-.motion{
-  padding-left: 1rem;
-}
-.graphics{
-  padding-left: .7rem;
+  gap: 5vw;
 }
 /* Links */
 a {
@@ -104,7 +97,7 @@ a {
 }
 
 /* Small desktop breakpoint */
-@media (max-width: 1500px) {
+@media (max-width: 1300px) {
   body {
     line-height: 1.4;
     width: 75vw;
@@ -117,8 +110,8 @@ a {
     color: var(--color-brightwhite);
     position: relative;
     padding-top: 20vh;
-    padding-bottom: 2vh;
-    text-align: center;
+    padding-bottom: 1.8vh;
+    text-align: left;
     letter-spacing: .6rem;
   }
  
@@ -127,32 +120,6 @@ a {
 
   .menu {
     min-height: 5vh;
-  }
-
-  .links{
-    /* border: 2px solid red; */
-    padding-top: 2vh;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    gap: 12.5vw;
-  }
-  
-  .motion{
-    padding-left: 3.25rem;
-  }
-  .graphics{
-    padding-left: 2.25rem;
-  }
-  /* Links */
-  a {
-    text-decoration: none;
-    font-family: var(--font-family-1);
-    font-size: .85rem;
-    color: var(--color-brightwhite);
-    letter-spacing: 15px;
   }
 }
 
@@ -165,22 +132,21 @@ a {
   header {
     position: relative;
     font-size: 1.5em;
-    padding-top: 10vh;
+    padding-top: 3.25vh;
     padding-bottom: .5vh;
+     text-align: left;
     color: var(--color-brightwhite);
   }
   
   h1 {
       position: relative;
-    /* font-size: 1.5em; */
-    /* padding-top: 2vh; */
     padding-bottom: .8vh;
     color: var(--color-brightwhite);
     line-height: 2;
     font-size: .45em;
     letter-spacing: 3px;
     max-width: 100%;
-    padding-top: 0;
+    padding-top: 1.75vh;
   }
   
   a {
@@ -190,7 +156,7 @@ a {
   .links{
     padding-top: 3vh;
     flex-direction: column;
-    gap: 5vh;
+    gap: 3vh;
   }
 
   .selfie {
